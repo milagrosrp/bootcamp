@@ -1,0 +1,39 @@
+.azul { background: rgb(115, 115, 250); }
+.naranja, .naranja3 { background: rgb(243, 127, 44); }
+.verde { background: rgb(58, 156, 58); }
+
+.azul, .naranja, .naranja3, .verde {
+    height: 50px;
+    color: white;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .azul, .verde {
+        width: 50%;
+    }
+}
+
+@media (min-width: 701px) {
+    .row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .naranja3 {
+        width: 50%;
+    }
+}

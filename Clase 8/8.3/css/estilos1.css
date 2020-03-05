@@ -1,0 +1,45 @@
+.azul1, .azul2, .azul3, .azul4, .azul5, .azul6 {
+    background: rgb(56, 180, 238);
+    height: 40px;
+    color: white;
+    border: solid 1px blue;
+    text-align: center;
+    font-size: 2rem;
+}
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 399px) {
+    .azul3, .azul4 {
+        width: 50%;
+    }
+    .azul4 {
+        align-self: flex-end;
+    }
+}
+@media (min-width: 400px) and (max-width: 700px) {   
+    .azul1, .azul5, .azul3 {
+        width: 50%;
+    }
+    .azul3 {
+        align-self: flex-end;
+    }
+    .azul6 {
+        display: none;
+    }
+}
+@media (min-width: 701px) {
+    .azul2, .azul3, .azul4 {
+        width: 50%;
+    }
+    .azul2 {
+        align-self: flex-end;
+    }
+    .azul3 {
+        align-self: center;
+    }
+    .azul5 {
+        display: none;
+    }
+}

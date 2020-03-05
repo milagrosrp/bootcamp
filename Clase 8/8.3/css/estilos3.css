@@ -1,0 +1,54 @@
+.rojo1, .rojo2, .rojo3, .rojo4, .rojo5, .rojo6, .rojo7, .rojo8, .rojo9, .rojo10 {
+    background: red;
+    height: 40px;
+    color: white;
+    border: solid 1px yellowgreen;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.row1, .row2, .row3, .row4, .row5, .row6, .row7  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media (max-width: 199px) {
+    .rojo1, .rojo10 {
+        display: none;
+    }
+    .rojo2, .rojo3, .rojo5, .rojo6, .rojo8, .rojo9 {
+        width: 50%;
+    }
+    .rojo2, .rojo6, .rojo8 {
+        height: 100px;
+    }
+    .rojo6 {
+        align-self: flex-end;
+    }
+}
+@media (min-width: 200px) and (max-width: 700px) {
+    .row2, .row4, .row6 {
+        flex-direction: row-reverse;
+    }
+    .rojo2, .rojo3, .rojo5, .rojo6, .rojo8, .rojo9 {
+        width: 50%;
+    }
+    .rojo3, .rojo5, .rojo9 {
+        height: 100px;
+    }
+    .rojo10 {
+        display: none;
+    }
+}
+@media (min-width: 701px) {
+    .row2, .row4, .row6 {
+        flex-direction: row-reverse;
+    }
+    .rojo2, .rojo3, .rojo5, .rojo6, .rojo8, .rojo9 {
+        width: 50%;
+    }
+    .rojo2, .rojo6, .rojo8 {
+        height: 100px;
+    }
+}

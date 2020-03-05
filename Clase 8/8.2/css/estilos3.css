@@ -1,0 +1,74 @@
+.rojo { border: solid 1px red; }
+.blanco { border: solid 1px white; }
+.negro1, .negro2, .negro3 { background: black; }
+.amarillo4, .amarillo5, .amarillo6 { background: rgb(243, 194, 31); }
+.azul7, .azul8, .azul9 { background: rgb(46, 108, 241); }
+.verde { background: rgb(46, 167, 46); }
+
+.negro1, .negro2, .negro3, .amarillo4, .amarillo5, .amarillo6, .azul7, .azul8, .azul9, .verde {
+    height: 40px;
+    color: white;
+    border: solid 1px gray;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:200px) and (max-width: 700px) {
+    .row1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .negro2, .negro3, .azul7 {
+        width: 50%;
+    }
+    .amarillo4 {
+        width: 80%;
+        align-self: center;
+    }
+    .amarillo5 {
+        width: 90%;
+        align-self: flex-end;
+    }
+    .amarillo6 {
+        width: 90%;
+        align-self: flex-start;
+    }
+    .azul9 {
+        width: 50%;
+        align-self: flex-end;
+    }
+    .verde {
+        width: 20%;
+        align-self: center;
+    }
+}
+@media (min-width: 701px) {
+    .row1, .row3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .negro1, .negro2 {
+        width: 20%;
+    }
+    .negro3, .amarillo6 {
+        width: 60%;
+    }
+    .amarillo5 {
+        width: 60%;
+        align-self: flex-end;
+    }
+    .azul7, .azul8 {
+        width: 50%;
+    }
+    .verde {
+        width: 50%;
+        align-self: flex-end;
+    }
+}

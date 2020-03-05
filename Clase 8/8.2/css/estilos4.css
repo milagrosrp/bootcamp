@@ -1,0 +1,58 @@
+.amarillo1, .amarillo2, .amarillo3 { background: rgb(238, 179, 51); }
+.verde4, .verde5, .verde6 { background: rgb(70, 192, 86); }
+.azul7, .azul8, .azul9 { background: rgb(56, 180, 238); }
+.negro10 { background: black; }
+
+.amarillo1, .amarillo2, .amarillo3, .verde4, .verde5, .verde6, .azul7, .azul8, .azul9, .negro10 {
+    height: 40px;
+    color: white;
+    border: solid 1px red;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 390px) and (max-width: 660px) {
+    .row1, .row3 {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .row2 {
+        flex-direction: column;
+    }
+    .amarillo1, .verde5, .verde6, .azul7 {
+        width: 50%;
+    }
+    .amarillo2, .negro10 {
+        width: 25%;
+    }
+    .amarillo3 {
+        width: 90%;
+    }
+    .azul8 {
+        width: 55%;
+    }
+}
+@media (min-width: 661px) {
+    .row1, .row2 {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .amarillo1, .verde4, .azul7 {
+        width: 90%;
+    }
+    .amarillo2, .verde5, .azul8 {
+        width: 20%;
+    }
+    .amarillo3, .verde6, .azul9 {
+        width: 80%;
+    }
+}

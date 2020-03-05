@@ -1,0 +1,13 @@
+.negro { background: black; }
+.amarillo { background: rgb(243, 194, 31); }
+.azul { background: rgb(46, 108, 241); }
+.verde { background: rgb(46, 167, 46); }
+.negro, .amarillo, .azul, .verde {
+    height: 40px;
+    color: white;
+    border: solid 1px gray;
+    text-align: center;
+    font-size: 2rem;
+}
+.rojo { border: solid 1px red; }
+.blanco { border: solid 1px white; }

@@ -1,0 +1,50 @@
+.hijo1, .hijo2, .hijo3, .hijo4, .hijo5, .hijo6  {
+    background-color: rgba(7, 171, 247, 0.63);
+    color: white;
+    border: solid 1px blue;
+    font-size: 2rem;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 349px) {
+    .hijo3, .hijo4 {
+        width: 50%;
+    }
+    .hijo3 {
+        align-self: flex-end;
+    }    
+}
+@media (min-width: 350px) and (max-width: 650px) {
+    .hijo3 {
+        width: 50%;
+        align-self: center;
+    }
+    .hijo5 {
+        height: 80px;
+        line-height: 80px;
+    }
+    .hijo6 {
+        display: none;
+    }
+}
+@media (min-width: 651px) {
+    .hijo2, .hijo3, .hijo4 {
+        width: 50%;
+    }
+    .hijo2 {
+        align-self: flex-end;
+    }
+    .hijo5 {
+        display: none;
+    }
+    .hijo6 {
+        height: 80px;
+        line-height: 80px;
+    }
+}

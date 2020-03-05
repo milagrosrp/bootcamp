@@ -1,0 +1,14 @@
+.azul { background: rgb(131, 177, 247); }
+.amarillo { background: yellow; }
+.gris { background: gray; }
+.azul, .amarillo, .gris {
+    height: 40px;
+    color: white;
+    font-size: 2rem;
+    border: solid 1px black;
+    text-align: center;
+}
+.negro { 
+    color: black; 
+    border: solid 1px brown;
+}

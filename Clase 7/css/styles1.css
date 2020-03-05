@@ -1,0 +1,9 @@
+.amarillo { background: yellow; }
+.azul { background: blue; }
+
+.amarillo, .azul {
+    border: solid 1px black;
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+}

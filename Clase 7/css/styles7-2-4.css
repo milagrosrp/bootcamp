@@ -1,0 +1,14 @@
+.amarillo { background: rgb(238, 179, 51); }
+.verde { background: rgb(70, 192, 86); }
+.azul { background: rgb(56, 180, 238); }
+.negro { background: black; }
+.amarillo, .verde, .azul, .negro {
+    height: 40px;
+    color: white;
+    border: solid 1px red;
+    font-size: 2rem;
+    text-align: center;
+}
+/* .col-sm-7.porcentaje {
+    flex-basis: 52%;
+} */

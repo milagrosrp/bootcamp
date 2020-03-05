@@ -1,0 +1,66 @@
+.negro1, .negro2, .negro3, .negro4, .negro5, .negro6, .negro7, .negro8, .negro9, .negro10 {
+    background: black;
+    height: 40px;
+    color: white;
+    border: solid 1px blue;
+    text-align: center;
+    font-size: 2rem;
+}
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 389px) {
+    .row2 {
+        flex-direction: column-reverse;
+    }    
+    .negro2, .negro3, .negro5, .negro6 {
+        width: 30%;
+    }
+    .negro2, .negro6 {
+        align-self: flex-end;
+    }
+    .negro4 {
+        width: 70%;
+        align-self: flex-end;
+    }
+    .negro7, .negro8, .negro9 {
+        display: none;
+    }
+}
+@media (min-width: 390px) and (max-width: 660px) {
+    .row3 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .negro3, .negro4, .negro5, .negro6 {
+        width: 80%;
+    }
+    .negro4, .negro6 {
+        align-self: flex-end;
+    }
+    .negro7, .negro8 {
+        width: 25%;
+        height: 130px;
+    }
+}
+@media (min-width: 661px) {
+    .negro1 {
+        display: none;
+    }
+    .negro3, .negro4, .negro5, .negro7 {
+        width: 33%;
+    }
+    .negro4, .negro9 {
+        align-self: center;
+    }
+    .negro5 {
+        align-self: flex-end;
+    }
+    .negro9 {
+        width: 30%;
+    }
+    .negro7, .negro8, .negro9 {
+        height: 60px;
+    }
+}
